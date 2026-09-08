@@ -1,5 +1,7 @@
 # llmgate
 
+[![ci](https://github.com/RakeshAgurla/llmgate/actions/workflows/ci.yml/badge.svg)](https://github.com/RakeshAgurla/llmgate/actions/workflows/ci.yml)
+
 A gateway that sits in front of LLM calls and makes them cheaper, faster, and
 safer — with an ablation that shows how much each mechanism actually
 contributed rather than one blended number.
