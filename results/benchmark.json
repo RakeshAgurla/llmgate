@@ -1,0 +1,151 @@
+{
+  "real_api": true,
+  "embedder": "sentence-transformers",
+  "threshold": 0.92,
+  "workload_size": 53,
+  "unique_prompts": 28,
+  "arms": [
+    {
+      "requests": 53,
+      "cache_hits": 0,
+      "cache_hit_rate": 0.0,
+      "escalations": 0,
+      "guard_blocks": 3,
+      "guard_flags": 3,
+      "routed_by_tier": {
+        "standard": 50
+      },
+      "total_cost_usd": 0.06597,
+      "baseline_cost_usd": 0.06597,
+      "saved_usd": 0.0,
+      "savings_pct": 0.0,
+      "latency": {
+        "api_p50_ms": 2689.25,
+        "api_p95_ms": 7622.79,
+        "api_mean_ms": 3091.14,
+        "cache_p50_ms": 0.0,
+        "cache_p95_ms": 0.0,
+        "api_calls": 53,
+        "cache_hits": 0
+      },
+      "arm": "baseline",
+      "false_cache_hits": 0,
+      "guard_blocked": 3,
+      "cache": {
+        "entries": 0,
+        "lookups": 0,
+        "hits": 0,
+        "hit_rate": 0.0,
+        "threshold": 0.92,
+        "total_entry_hits": 0
+      }
+    },
+    {
+      "requests": 53,
+      "cache_hits": 0,
+      "cache_hit_rate": 0.0,
+      "escalations": 0,
+      "guard_blocks": 3,
+      "guard_flags": 3,
+      "routed_by_tier": {
+        "cheap": 40,
+        "standard": 10
+      },
+      "total_cost_usd": 0.047838,
+      "baseline_cost_usd": 0.0936,
+      "saved_usd": 0.045762,
+      "savings_pct": 48.89,
+      "latency": {
+        "api_p50_ms": 1757.88,
+        "api_p95_ms": 3867.98,
+        "api_mean_ms": 2243.11,
+        "cache_p50_ms": 0.0,
+        "cache_p95_ms": 0.0,
+        "api_calls": 53,
+        "cache_hits": 0
+      },
+      "arm": "routing_only",
+      "false_cache_hits": 0,
+      "guard_blocked": 3,
+      "cache": {
+        "entries": 0,
+        "lookups": 0,
+        "hits": 0,
+        "hit_rate": 0.0,
+        "threshold": 0.92,
+        "total_entry_hits": 0
+      }
+    },
+    {
+      "requests": 53,
+      "cache_hits": 27,
+      "cache_hit_rate": 0.5094,
+      "escalations": 0,
+      "guard_blocks": 3,
+      "guard_flags": 3,
+      "routed_by_tier": {
+        "standard": 23
+      },
+      "total_cost_usd": 0.032946,
+      "baseline_cost_usd": 0.069768,
+      "saved_usd": 0.036822,
+      "savings_pct": 52.78,
+      "latency": {
+        "api_p50_ms": 2858.71,
+        "api_p95_ms": 7276.77,
+        "api_mean_ms": 3041.36,
+        "cache_p50_ms": 17.18,
+        "cache_p95_ms": 21.03,
+        "api_calls": 26,
+        "cache_hits": 27
+      },
+      "arm": "cache_only",
+      "false_cache_hits": 0,
+      "guard_blocked": 3,
+      "cache": {
+        "entries": 23,
+        "lookups": 50,
+        "hits": 27,
+        "hit_rate": 0.54,
+        "threshold": 0.92,
+        "total_entry_hits": 27
+      }
+    },
+    {
+      "requests": 53,
+      "cache_hits": 27,
+      "cache_hit_rate": 0.5094,
+      "escalations": 0,
+      "guard_blocks": 3,
+      "guard_flags": 3,
+      "routed_by_tier": {
+        "cheap": 19,
+        "standard": 4
+      },
+      "total_cost_usd": 0.021744,
+      "baseline_cost_usd": 0.095172,
+      "saved_usd": 0.073428,
+      "savings_pct": 77.15,
+      "latency": {
+        "api_p50_ms": 1727.38,
+        "api_p95_ms": 4189.58,
+        "api_mean_ms": 2086.22,
+        "cache_p50_ms": 16.89,
+        "cache_p95_ms": 19.12,
+        "api_calls": 26,
+        "cache_hits": 27
+      },
+      "arm": "cache_and_routing",
+      "false_cache_hits": 0,
+      "guard_blocked": 3,
+      "cache": {
+        "entries": 23,
+        "lookups": 50,
+        "hits": 27,
+        "hit_rate": 0.54,
+        "threshold": 0.92,
+        "total_entry_hits": 27
+      }
+    }
+  ]
+}
